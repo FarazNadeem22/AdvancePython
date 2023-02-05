@@ -15,3 +15,7 @@ Get up to date on environment:
 ------------------------------
 python -m pip install -r requirements.txt
 
+$ git status
+$ git add .
+$ git commit -m "comment"
+$ git push
