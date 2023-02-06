@@ -6,11 +6,12 @@ writeThis = ''
 
 print(sys.argv[0], sys.argv[1], sys.argv[2])
 print(sys.argv)
+
 for argument in sys.argv:
-    if argument == sys.argv[0] or argument == sys.argv[0]:
+    if argument == sys.argv[0] or argument == sys.argv[1]:
         pass
     else:
-        writeThis += argument
+        writeThis += argument + " "
         print(argument, end=" ")
 
 # Writing to a file 
