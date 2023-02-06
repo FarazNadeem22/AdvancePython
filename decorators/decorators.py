@@ -23,16 +23,16 @@ def calculateFactorial(x):
     return result
 
 
-def getChoice():
+def getChoice(arg):
     choice = input(
-        "The value of factorial is very large do you want to print to screen (Y,N)? ")
+        f"The value {arg} factorial is very large do you want to print to screen (Y,N)? ")
     return choice
 
 
 def main(arg):
     factorial = calculateFactorial(arg)
     if factorial > 10**100:
-        choice = getChoice()
+        choice = getChoice(arg)
         while choice.upper() not in ['Y', 'N']:
             print(f"You entered an incorrect choice {choice}")
             choice = getChoice()
